@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media (max-width: 400px) {
+            .hide {
+                display: none;
+            }
+
+            .widthl {
+                width: screen;
+            }
+
+            .mar {
+                margin: 20px;
+                display: inline;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .hidebar {
+                display: none;
+            }
+        }
+
+        @media(max-width:fullscreen) {
+            .height {
+                width: 100px;
+            }
+        }
+
+        @media(max-width:fullscreen) {
+            .lt {
+                width: screen;
+                width: 100%;
+            }
+        }
+    </style>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <div class="fixed items-center w-screen h-16 pt-2 bg-white">
+        <div class="flex items-center justify-start gap-1 head">
+            <div class="w-9 hide"><img src="images/lines.png" alt=""></div>
+            <div><a href="">
+                    <div class="w-auto fa fa-youtube-play" style="font-size:39px;color:red"></div>
+                </a></div>
+            <div class="font-bold lg:visible w-fit hidebar"><a href="index.html"
+                    style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">YOUTUBE</a></div>
+            <div class="items-end w-2/12 sm:w-3/12"> </div>
+            <div class="flex sm:w-full">
+                <input type="text"
+                    class="w-2/3 h-8 px-3 border border-black rounded-full sm:h-10 focus:border-gray-800 cursor-text"
+                    placeholder="Search here...">
+                <div class="w-10 border rounded-full"><a href="index.html"><img src="images/Microphone.png" alt=""
+                            class="sm:p-1"></a></div>
+            </div>
+            <div class="items-end justify-center pt-2 pr-4 sm:pr-9"><a href="" class=""><i style='font-size:24px'
+                        class='fa height'>&#xf2bd;</i></a>User</div>
+        </div>
+    </div>
+    <div class="flex pt-20">
+        <div class="w-1/6 py-3 mx-7 hidebar ">
+            <div class="gap-1 py-1">
+                <a href="index.html" class="flex gap-2">
+                    <div class=""><i class="px-3 text-lg fa-solid fa-house" style="color: black;"></i>
+                    </div>
+                    <div class="font-bold hide width"> Home
+                    </div>
+                </a>
+            </div>
+            <div class="gap-1 py-1">
+                <a href="index.html" class="flex gap-2">
+                    <div class=""><img src="images/shortslogo.png" alt="YouTube Shorts Icon"
+                            style="width: 35px; height: 35px;" class="mx-1">
+                    </div>
+                    <div class="justify-center mt-2 font-bold hide"> Shorts
+                    </div>
+                </a>
+            </div>
+            <div class="gap-1 py-1">
+                <a href="index.html" class="flex gap-2">
+                    <div class=""><img src="images/SubscriptionsLogo.png" alt="YouTube Shorts Icon"
+                            style="width: 25px; height: 25px;" class="ml-2">
+                    </div>
+                    <div class="justify-center ml-3 font-bold hide"> Subscriptions
+                    </div>
+                </a>
+            </div>
+            <div class="py-2">
+                <hr class="w-5/6 border border-gray-400">
+            </div>
+            <div class="py-2 mx-3">
+                <h2 class="font-extrabold">You ></h2>
+            </div>
+            <div class="m-3">
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Your channel</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">History</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Playlists</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Your videos</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Your courses</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Watch later</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Liked videos</div>
+                    </a>
+                </div>
+            </div>
+            <div class="py-2">
+                <hr class="w-5/6 border border-gray-400">
+            </div>
+            <div class="py-2 mx-1 sm:mx-3">
+                <h2 class="font-extrabold">Subscriptions</h2>
+            </div>
+            <div class="flex flex-col gap-3 mx-1 sm:mx-3">
+                <div class="hide">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div class="w-3/12"><img src="images/Channels/telusko.png" alt="" class="rounded-full h-9">
+                        </div>
+                        <div class="text-start">
+                            <h2>Telusko</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="hide">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div class="w-3/12"><img src="images/Channels/CS.png" alt="" class="rounded-full h-9"></div>
+                        <div class="text-start">
+                            <h2>Computer Science</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="hide">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div class="w-3/12"><img src="images/Channels/java.png" alt="" class="rounded-full h-9"></div>
+                        <div class="text-start">
+                            <h2>Java Dev</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="hide">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div class="w-3/12"><img src="images/Channels/SecIngr.png" alt="" class="rounded-full h-9"></div>
+                        <div class="text-start">
+                            <h2>Secrete Ingredient</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="hide">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div class="w-3/12"><img src="images/Channels/WebDev.png" alt="" class="rounded-full h-9"></div>
+                        <div class="text-start">
+                            <h2>Web Dev</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="hide">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div class="w-3/12"><img src="images/Channels/WebDev2.png" alt="" class="rounded-full h-9"></div>
+                        <div class="text-start">
+                            <h2>Front End</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="py-2">
+                <hr class="w-5/6 border border-gray-400">
+            </div>
+            <div class="py-2 mx-3">
+                <h2 class="font-extrabold">Explore</h2>
+            </div>
+            <div class="m-3">
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Trending</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Shopping</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Music</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Movies</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Live</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Gaming</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">News</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Sports</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Courses</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Fastion & Beauty</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Podcasts</div>
+                    </a>
+                </div>
+            </div>
+            <div class="py-2">
+                <hr class="w-5/6 border border-gray-400">
+            </div>
+            <div class="m-3">
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Settings</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Report History</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Help?</div>
+                    </a>
+                </div>
+                <div class="py-2 font-bold">
+                    <a href="">
+                        <div></div>
+                        <div class="hide">Send Feedback</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="w-full my-5 sm:mr-10">
+            <div class="flex flex-wrap items-center w-full gap-3 justify-evenly">
+                <div class=" widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t5.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/telusko.png" alt=""
+                                        class="h-10 rounded-full "></div>
+                                <div class="text-start">
+                                    <h2>Learn Full Stack Java</h2>
+                                    <h2>Telusko</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t1.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/SecIngr.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="w-full text-start">
+                                    <h2>You must know</h2>
+                                    <h2>Secret Ingredient</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t2.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/CS.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>CS basics</h2>
+                                    <h2>Computer Science</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t8.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/WebDev.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>Web development(HTML,CSS)</h2>
+                                    <h2>Web Dev</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t4.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/WebDev2.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>HTML,CSS,JavaScript</h2>
+                                    <h2>Front End</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t6.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/java.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>Learn Core Java (L-4)</h2>
+                                    <h2>Java Dev</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t7.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/telusko.png" alt=""
+                                        class="h-10 rounded-full "></div>
+                                <div class="text-start">
+                                    <h2>Java Fundamentals</h2>
+                                    <h2>Telusko</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class=" widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t5.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/telusko.png" alt=""
+                                        class="h-10 rounded-full "></div>
+                                <div class="text-start">
+                                    <h2>Learn Full Stack Java</h2>
+                                    <h2>Telusko</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t1.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/SecIngr.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="w-full text-start">
+                                    <h2>You must know</h2>
+                                    <h2>Secret Ingredient</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t2.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/CS.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>CS basics</h2>
+                                    <h2>Computer Science</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t8.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/WebDev.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>Web development(HTML,CSS)</h2>
+                                    <h2>Web Dev</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t4.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/WebDev2.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>HTML,CSS,JavaScript</h2>
+                                    <h2>Front End</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t6.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/java.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>Learn Core Java (L-4)</h2>
+                                    <h2>Java Dev</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t7.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/telusko.png" alt=""
+                                        class="h-10 rounded-full "></div>
+                                <div class="text-start">
+                                    <h2>Java Fundamentals</h2>
+                                    <h2>Telusko</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class=" widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t5.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/telusko.png" alt=""
+                                        class="h-10 rounded-full "></div>
+                                <div class="text-start">
+                                    <h2>Learn Full Stack Java</h2>
+                                    <h2>Telusko</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t1.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/SecIngr.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="w-full text-start">
+                                    <h2>You must know</h2>
+                                    <h2>Secret Ingredient</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t2.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/CS.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>CS basics</h2>
+                                    <h2>Computer Science</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t8.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/WebDev.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>Web development(HTML,CSS)</h2>
+                                    <h2>Web Dev</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t4.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/WebDev2.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>HTML,CSS,JavaScript</h2>
+                                    <h2>Front End</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t6.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/java.png" alt=""
+                                        class="h-10 rounded-full"></div>
+                                <div class="text-start">
+                                    <h2>Learn Core Java (L-4)</h2>
+                                    <h2>Java Dev</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="py-4 widthl">
+                    <a href="flex flex-col">
+                        <div class="">
+                            <img src="images/thumbnails/t7.png" alt="" class="w-full rounded-2xl">
+                        </div>
+                        <div class="flex">
+                            <a href="index.html" class="flex items-center gap-2 p-4">
+                                <div class="w-10 h-10"><img src="images/Channels/telusko.png" alt=""
+                                        class="h-10 rounded-full "></div>
+                                <div class="text-start">
+                                    <h2>Java Fundamentals</h2>
+                                    <h2>Telusko</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="w-5/12">
+                    <hr class="border border-black">
+                </div>
+                <div class="p-5 w-fit"><a href=""><button class="h-8 text-center rounded-full w-fit">Load
+                            more..</button></a>
+                </div>
+                <div class="w-5/12">
+                    <hr class="border border-black">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -10,26 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <style>
-        .video-container {
-            position: relative;
-            width: 100%; 
-            padding-bottom: 56.25%; 
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%; 
-            height: 100%;
-        }
-    </style>
 </head>
 
-<body>
+<body class="flex flex-col items-center">
+
     <div class="fixed items-center w-screen h-16 pt-2 bg-white">
         <div class="flex items-center justify-start gap-1 head">
             <div class="w-9 hide"><img src="images/lines.png" alt=""></div>
@@ -43,25 +27,31 @@
                 <input type="text"
                     class="w-2/3 h-8 px-3 border border-black rounded-full sm:h-10 focus:border-gray-800 cursor-text"
                     placeholder="Search here...">
-                <div class="w-10 border rounded-full"><a href="index.html"><img src="images/Microphone.png" alt=""
-                            class="sm:p-1"></a></div>
+                    <div class="flex items-center justify-center w-10 h-10 p-1 ml-2 border rounded-full sm:w-12 sm:h-12 sm:border sm:ml-1 sm:p-0">
+                        <a href="index.html" class="flex items-center justify-center w-full h-full">
+                            <img src="images/Microphone.png" alt="Microphone"
+                                class="object-center w-4 h-4 sm:w-3 sm:h-3">
+                        </a>
+                    </div>
             </div>
-            <div class="items-end justify-center pt-2 pr-4 sm:pr-9"><a href="" class=""><i style='font-size:24px'
-                        class='fa height'>&#xf2bd;</i></a>User</div>
+            <div class="flex flex-col items-center justify-center pt-4 sm:pr-20">
+                <a href="#" class="flex flex-col items-center">
+                    <i class="w-10 h-10 text-5xl fa fa-user"></i>
+                </a>
+            </div>
         </div>
     </div>
-
-    <div class="pt-16"></div>
-
-
-    <div class="w-full p-4 bg-white rounded-lg shadow-lg">
-        <div class="video-container">
-            <iframe id="youtubePlayer" src="" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+    <div class="flex items-center justify-center w-screen h-screen">
+        <div class="flex items-center justify-center w-full h-full p-10 bg-white sm:mt-16">
+            <div class="w-full overflow-hidden rounded-lg md:w-3/4 lg:w-1/2 aspect-video">
+                <iframe id="youtubePlayer" class="w-full h-full" src=""
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </div>
+    
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
